@@ -1,5 +1,6 @@
 # IntelliJ IDE files
 .idea/
+*.iml
 
 # npm files
 package-lock.json
