@@ -1,0 +1,7 @@
+# IntelliJ IDE files
+.idea/
+
+# npm files
+package-lock.json
+dist/
+node_modules/
