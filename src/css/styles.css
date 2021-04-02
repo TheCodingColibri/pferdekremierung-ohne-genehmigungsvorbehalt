@@ -6,7 +6,10 @@ html {
     font-family: Georgia, serif;
 }
 
-header, footer, .petition{
+header h1,
+footer,
+nav,
+.petition{
     text-align: center;
 }
 
