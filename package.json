@@ -22,5 +22,8 @@
     "posthtml": "^0.15.1",
     "posthtml-cli": "^0.9.1",
     "posthtml-modules": "^0.7.4"
+  },
+  "dependencies": {
+    "purecss": "^2.0.5"
   }
 }
