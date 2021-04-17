@@ -1,7 +1,7 @@
 html {
     width: 100%;
     height: 100%;
-    background-image: linear-gradient(to bottom right,#013c4a 0,#193e4c 30%,#004b5b 100%);
+    background-color: #013c4a;
     color: #fff;
     font-family: Georgia, serif;
 }
@@ -34,17 +34,17 @@ footer {
     padding: 1em;
 }
 
-a {
+main a, header a, footer a {
     text-decoration: none;
 }
-a:link {
+main a:link, header a:link, footer a:link {
     color: #c1e9d4;
     border-bottom: 1px solid #ffffff;
 }
-    a:visited {
+main a:visited, header a:visited, footer a:visited {
     color: #c1e9d4;
 }
-a:hover {
+main a:hover, header a:hover, footer a:hover {
     color: #a5dca3;
 }
 
@@ -54,4 +54,20 @@ a:hover {
 	    margin-left: auto;
 	    margin-right: auto;
 	}
+}
+
+.pure-menu-item a {
+    color: #c1e9d4;
+    border-bottom: 1px solid #ffffff;
+}
+.pure-menu-children .pure-menu-item {
+    border-left: 1px solid #ffffff;
+    border-right: 1px solid #ffffff;
+    border-bottom: 1px solid #ffffff;
+}
+.pure-menu-link {
+    background-color: #013c4a;
+}
+.pure-menu-link:hover {
+   background-color: #217587;
 }
