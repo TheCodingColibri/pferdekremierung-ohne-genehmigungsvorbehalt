@@ -20,7 +20,7 @@ body {
     overflow-wrap: break-word;
 }
 
-p {
+main p {
     text-align: justify;
     text-justify: inter-word;
 }
