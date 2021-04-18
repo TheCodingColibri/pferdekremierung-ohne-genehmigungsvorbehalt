@@ -9,9 +9,11 @@
     "clean": "rm -rf dist/*",
     "build:html": "posthtml -c posthtml.json",
     "build:css": "postcss src/css/*.css --dir dist/css",
+    "build:img": "cp -r src/images/*  dist/images/",
     "build": "run-s build:*",
     "watch:html": "onchange \"src/html\" -- npm run build:html",
     "watch:css": "onchange \"src/css\" -- npm run build:css",
+    "watch:img": "onchange \"src/images\" -- npm run build:img",
     "serve": "serve dist/",
     "watch": "run-p serve watch:*"
   },
