@@ -7,7 +7,7 @@ html {
 }
 
 header h1,
-footer,
+body > footer,
 nav,
 .petition{
     text-align: center;
@@ -25,7 +25,7 @@ main p {
     text-justify: inter-word;
 }
 
-footer {
+body > footer {
     padding: 1em;
 }
 
@@ -48,14 +48,6 @@ main a:hover, header a:hover, footer a:hover {
     color: #a5dca3;
 }
 
-@media screen and (max-width: 746px) {
-	body {
-	    width:95%;
-	    margin-left: auto;
-	    margin-right: auto;
-	}
-}
-
 .pure-menu-item a {
     color: #c1e9d4;
     border-bottom: 1px solid #ffffff;
@@ -70,4 +62,36 @@ main a:hover, header a:hover, footer a:hover {
 }
 .pure-menu-link:hover {
    background-color: #217587;
+}
+
+.picture-grid {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+}
+
+
+figure {
+    margin: 0.25rem;
+}
+/*
+.align-right {
+    float: right;
+}
+
+.align-left {
+    float: left;
+}
+*/
+
+@media screen and (max-width: 746px) {
+	body {
+	    width:95%;
+	    margin-left: auto;
+	    margin-right: auto;
+	}
+    .picture-grid {
+        justify-content: space-evenly;
+    }
 }
